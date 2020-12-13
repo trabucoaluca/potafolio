@@ -45,3 +45,22 @@
 .col-12 {
     width: 100%;
 }
+
+@media(min-width: 576px) {
+    #menu {
+        width: auto;
+        height: auto;
+        position: static;
+        padding: 0;
+        box-shadow: none;
+        
+    }
+    #menu li {
+        display: inline-block;
+        
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}

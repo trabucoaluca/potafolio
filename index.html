@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <script src="./script.js"></script>
     <title>Profile Jorge</title>
 </head>
 <body>
@@ -15,15 +17,20 @@
             </div>
             <p><span>Jorge</span> Gutierrez</p>
         </div>
-        <nav> 
-            <ul><a href="#">About Me</a></ul>
-            <ul><a href="#">Resume</a></ul>
-            <ul><a href="#">Portafolio</a></ul>
-            <ul><a href="#">Blog</a></ul>
-            <ul><a href="#">Contact</a></ul>
-            <ul><a href="#">Extra</a></ul>
-            <ul><a href="#">Get it Now</a></ul>
+        <nav id="menu" class="hidden">
+            <ul class="text-nav-container">
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Extra</a></li>
+                <li><a href="#">Get it Now</a></li>
+            </ul>
         </nav>
+        <a href="#" class="burger-menu" onclick="showMenu()">
+            <i class="fas fa-align-justify"></i>
+        </a>
     </header>
 
     <!-- PHOTO -->
@@ -43,62 +50,77 @@
     <section class="container-content">
         <h2>What I Do</h2>
         <div class="container-card">
-            <div class="container-icon">
-                <i class="fas fa-align-justify"></i>
+            <div class="container-icon icon-card-first">
+                <i class="fas fa-pencil-alt"></i>
             </div>
-            <div>
+            <div class="container-content-card">
                 <h3>Copywrite</h3>
                 <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.</p>
             </div>
         </div>
         
         <div class="container-card">
-            <div></div>
-            <div>
+            <div class="container-icon icon-card-first">
+                <i class="fas fa-desktop"></i>
+            </div>
+            <div class="container-content-card">
                 <h3>Web Design</h3>
                 <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.</p>
             </div>
         </div>
 
         <div class="container-card">
-            <div></div>
-            <div>
+            <div class="container-icon icon-card-first">
+                <i class="fas fa-store-alt"></i>
+            </div>
+            <div class="container-content-card">
                 <h3>Ecommerce</h3>
                 <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.</p>
             </div>
         </div>
 
         <div class="container-card">
-            <div></div>
-            <div>
+            <div class="container-icon icon-card-first">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="container-content-card">
                 <h3>Marketing</h3>
                 <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.</p>
             </div>
         </div>
     </section>
 
-    <section>
+    <!-- CARDS -->
+    <section class="container-content-second">
         <h2>Fun Facts</h2>
-        <div>
-            <div></div>
+        <div class="container-card-second">
+            <div class="container-icon">
+                <i class="fas fa-heart"></i>
+            </div>
             <h3>Happy Clients</h3>
             <p>578</p>
         </div>
 
-        <div>
-            <div></div>
+        <div class="container-card-second">
+            <div class="container-icon">
+                <i class="far fa-clock"></i>
+            </div>
             <h3>Working Hours</h3>
             <p>4,780</p>
         </div>
 
-        <div>
-            <div></div>
+        <div class="container-card-second">
+            <div class="container-icon">
+                <i class="far fa-star"></i>
+            </div>
             <h3>Awards Won</h3>
             <p>15</p>
         </div>
 
-        <div>
-            <div></div>
+        <div class="container-card-second">
+            <div class="container-icon">
+                <i class="fas fa-coffee"></i>
+            </div>
             <h3>Coffee Consumed</h3>
             <p>1,286</p>
         </div>

@@ -19,6 +19,40 @@ body {
     justify-content: space-between;
 }
 
+#menu {
+    top: 70px;
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+    width: 150px;
+    right: 0;
+    transition: right 0.2s;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    background-color: #202020;
+    padding: 10px 20px;
+}
+
+#menu.hidden {
+    right: -200px;
+}
+
+/* .hidden {
+    color: white;
+} */
+
+.text-nav-container li {
+    list-style: none;
+}
+
+.text-nav-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.burger-menu {
+    color: white;
+}
+
 .container-circle {
     background-color: slateblue;
     border-radius: 50%;
@@ -94,13 +128,13 @@ body {
 
 .container-content {
     margin: auto;
-    background-color: green;
+    /* background-color: green; */
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     /* justify-content: center; */
     /* text-align: center; */
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .container-content h2{
@@ -113,7 +147,40 @@ body {
 }
 
 .container-icon {
-    width: 50px;
-    padding: 20px 10px;
+    /* padding-top: 20px;
+    padding-right: 10px; */
     font-size: 33px;
+    color: #007ced;
 }
+
+.icon-card-first {
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.container-content-card {
+    padding: 0 10px;
+}
+
+.container-content-second {
+    width: 80%;
+    margin: auto;
+}
+
+.container-card-second {
+    border: 2px solid gray;
+    text-align: center;
+    background-color: lightslategrey;
+    margin: 15px 0;
+    padding: 15px 0;
+}
+
+.container-card-second h3 {
+    margin: 10px 0;
+}
+
+.container-card-second p{
+    font-size: 58px;
+    margin: 10px 0;
+}
+
